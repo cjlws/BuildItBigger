@@ -7,10 +7,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.JavaJoke;
+
 
 public class MainActivity extends ActionBarActivity {
 
-    // GitHub Test
+    //TODO Remove Menu if not used by the end
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +44,11 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void tellJoke(View view) {
-        Toast.makeText(this, "derp", Toast.LENGTH_SHORT).show();
+
+        // Code required for Step One of the task
+        JavaJoke javaJoke = new JavaJoke();
+        Toast.makeText(this, javaJoke.tellAJoke(), Toast.LENGTH_SHORT).show();
+
     }
 
 
