@@ -23,7 +23,7 @@ public class JokeDisplayActivity extends AppCompatActivity {
         if(receivedJoke != null){
             jokeTextView.setText(receivedJoke);
         } else {
-            jokeTextView.setText("No Joke Received :(");  //TODO Move to Strings file
+            jokeTextView.setText(getResources().getText(R.string.no_joke_received));
         }
     }
 }
