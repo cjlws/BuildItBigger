@@ -1,13 +1,15 @@
-package com.udacity.gradle.builditbigger;
+package com.udacity.gradle.builditbigger.free;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.util.Pair;
 import android.view.View;
 
 import com.example.JavaJoke;
-
+import com.udacity.gradle.builditbigger.EndpointsAsyncTask;
+import com.udacity.gradle.builditbigger.R;
 
 public class MainActivity extends ActionBarActivity {
 

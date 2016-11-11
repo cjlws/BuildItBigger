@@ -5,9 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Pair;
-import android.widget.Toast;
-
-import com.example.JavaJoke;
 import com.example.androidjokelibrary.JokeDisplayActivity;
 import com.example.johnrobinson.myapplication.backend.myApi.MyApi;
 import com.google.api.client.extensions.android.http.AndroidHttp;
@@ -17,7 +14,7 @@ import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 
 import java.io.IOException;
 
-class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
+public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
     private static MyApi myApiService = null;
     private Context context;
 
